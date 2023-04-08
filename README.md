@@ -46,10 +46,7 @@ docker-compose exec web python manage.py importdb
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
-- Приложение доступно по адресу http://localhost.
-```
-http://localhost.
-```
+- Документация на приложение доступна по адресу http://localhost/redoc
 ### Docker Hub
 - Скачать образ из удалённого репозитория:
 ```
