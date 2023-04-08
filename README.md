@@ -7,12 +7,14 @@ api_yamdb
 Благодарные или возмущённые пользователи могут оставлять к произведениям текстовые отзывы и ставят произведению оценку в диапазоне от одного до десяти (целое число).
 Пользователи могут оставлять комментарии к отзывам.
 ## Технологии
-Python 3.7
-Django 3.2
-DRF
-PyJWT
-Nginx
-Docker
+Python 3.7,
+Django 3.2,
+DRF,
+PyJWT,
+Nginx,
+Docker,
+PostgreSQL,
+Gunicorn
 ### Запуск проекта.
 - Клонировать репозиторий и перейти в него в командной строке:
 ```
@@ -41,4 +43,9 @@ docker-compose exec web python manage.py importdb
 - Создание суперюзера:
 ```
 docker-compose exec web python manage.py createsuperuser
+```
+### Docker Hub
+- Скачать образ из удалённого репозитория
+```
+docker pull valentaine98/infra-web
 ```
